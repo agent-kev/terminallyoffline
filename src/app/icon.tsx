@@ -15,18 +15,87 @@ export default function Icon() {
           justifyContent: "center",
           background: "linear-gradient(135deg, #2D6A4F, #1B998B)",
           borderRadius: 6,
+          padding: 3,
         }}
       >
-        <span
+        {/* Left plug */}
+        <div
           style={{
-            fontSize: 18,
-            fontWeight: 700,
-            color: "white",
-            letterSpacing: -1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-end",
+            gap: 3,
           }}
         >
-          TO
-        </span>
+          <div
+            style={{
+              width: 10,
+              height: 10,
+              borderRadius: 2,
+              border: "2px solid white",
+            }}
+          />
+          <div
+            style={{
+              width: 10,
+              height: 10,
+              borderRadius: 2,
+              border: "2px solid white",
+            }}
+          />
+        </div>
+        {/* Prongs */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 7,
+            margin: "0 1px",
+          }}
+        >
+          <div style={{ width: 3, height: 2, background: "white", borderRadius: 1 }} />
+          <div style={{ width: 3, height: 2, background: "white", borderRadius: 1 }} />
+        </div>
+        {/* Gap */}
+        <div style={{ width: 2 }} />
+        {/* Slots */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 7,
+            margin: "0 1px",
+          }}
+        >
+          <div style={{ width: 3, height: 2, background: "white", borderRadius: 1 }} />
+          <div style={{ width: 3, height: 2, background: "white", borderRadius: 1 }} />
+        </div>
+        {/* Right socket */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: 3,
+          }}
+        >
+          <div
+            style={{
+              width: 10,
+              height: 10,
+              borderRadius: 2,
+              border: "2px solid white",
+            }}
+          />
+          <div
+            style={{
+              width: 10,
+              height: 10,
+              borderRadius: 2,
+              border: "2px solid white",
+            }}
+          />
+        </div>
       </div>
     ),
     { ...size }

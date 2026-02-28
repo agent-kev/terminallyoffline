@@ -41,6 +41,7 @@ export function createOGImage({
           }}
         />
 
+        {/* Disconnected plug logo mark */}
         <div
           style={{
             display: "flex",
@@ -51,18 +52,20 @@ export function createOGImage({
             borderRadius: 20,
             background: "linear-gradient(135deg, #2D6A4F, #1B998B)",
             marginBottom: 40,
+            gap: 4,
           }}
         >
-          <span
-            style={{
-              fontSize: 36,
-              fontWeight: 700,
-              color: "white",
-              letterSpacing: -1,
-            }}
-          >
-            TO
-          </span>
+          <div style={{ width: 18, height: 30, borderRadius: 5, border: "3px solid white" }} />
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            <div style={{ width: 6, height: 3, background: "white", borderRadius: 1 }} />
+            <div style={{ width: 6, height: 3, background: "white", borderRadius: 1 }} />
+          </div>
+          <div style={{ width: 4 }} />
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            <div style={{ width: 6, height: 3, background: "white", borderRadius: 1 }} />
+            <div style={{ width: 6, height: 3, background: "white", borderRadius: 1 }} />
+          </div>
+          <div style={{ width: 18, height: 30, borderRadius: 5, border: "3px solid white" }} />
         </div>
 
         {label && (

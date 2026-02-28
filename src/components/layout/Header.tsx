@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
+import { LogoMark } from "@/components/ui/Logo";
 import { ThemeToggle } from "./ThemeToggle";
 import { MobileMenu } from "./MobileMenu";
 
@@ -39,11 +40,12 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className={`font-display text-xl sm:text-2xl tracking-tight transition-colors ${
+            className={`flex items-center gap-2.5 font-display text-xl sm:text-2xl tracking-tight transition-colors ${
               solid ? "text-foreground" : "text-white"
             }`}
           >
-            Terminally Offline
+            <LogoMark size={26} />
+            <span>Terminally Offline</span>
           </Link>
 
           {/* Desktop Nav */}

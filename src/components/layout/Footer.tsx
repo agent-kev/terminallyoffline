@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { LogoMark } from "@/components/ui/Logo";
 import { NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 
 export function Footer() {
@@ -12,8 +13,9 @@ export function Footer() {
         <div className="py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="font-display text-2xl">
-              Terminally Offline
+            <Link href="/" className="flex items-center gap-2.5 font-display text-2xl">
+              <LogoMark size={24} />
+              <span>Terminally Offline</span>
             </Link>
             <p className="mt-4 text-cloud/50 text-sm leading-relaxed max-w-xs">
               Encouragement to disconnect.

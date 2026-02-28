@@ -19,7 +19,7 @@ function layout(content: string) {
     <!-- Logo -->
     <div style="text-align:center;margin-bottom:40px;">
       <div style="display:inline-block;width:48px;height:48px;background:linear-gradient(135deg,#2D6A4F,#1B998B);border-radius:12px;line-height:48px;text-align:center;">
-        <span style="color:white;font-weight:700;font-size:20px;">TO</span>
+        <span style="color:white;font-weight:700;font-size:18px;letter-spacing:4px;">] [</span>
       </div>
     </div>
 

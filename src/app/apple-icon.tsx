@@ -17,16 +17,50 @@ export default function AppleIcon() {
           borderRadius: 36,
         }}
       >
-        <span
+        {/* Left plug body */}
+        <div
           style={{
-            fontSize: 80,
-            fontWeight: 700,
-            color: "white",
-            letterSpacing: -3,
+            width: 44,
+            height: 70,
+            borderRadius: 12,
+            border: "5px solid white",
+          }}
+        />
+        {/* Prongs */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 24,
+            marginLeft: -2,
           }}
         >
-          TO
-        </span>
+          <div style={{ width: 14, height: 5, background: "white", borderRadius: 2 }} />
+          <div style={{ width: 14, height: 5, background: "white", borderRadius: 2 }} />
+        </div>
+        {/* Gap */}
+        <div style={{ width: 10 }} />
+        {/* Slots */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 24,
+            marginRight: -2,
+          }}
+        >
+          <div style={{ width: 14, height: 5, background: "white", borderRadius: 2 }} />
+          <div style={{ width: 14, height: 5, background: "white", borderRadius: 2 }} />
+        </div>
+        {/* Right socket body */}
+        <div
+          style={{
+            width: 44,
+            height: 70,
+            borderRadius: 12,
+            border: "5px solid white",
+          }}
+        />
       </div>
     ),
     { ...size }
