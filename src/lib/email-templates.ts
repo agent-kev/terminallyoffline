@@ -31,7 +31,7 @@ function layout(content: string) {
     <!-- Footer -->
     <div style="text-align:center;margin-top:32px;padding:0 16px;">
       <p style="color:${BRAND.lightGrey};font-size:12px;line-height:1.6;margin:0;">
-        Terminally Offline Club &middot; Aotearoa, New Zealand<br/>
+        Terminally Offline &middot; Aotearoa, New Zealand<br/>
         <a href="${BRAND.url}" style="color:${BRAND.green};text-decoration:none;">terminallyoffline.club</a>
       </p>
       <p style="color:#ccc;font-size:11px;margin-top:16px;font-family:monospace;letter-spacing:1px;">
@@ -45,47 +45,22 @@ function layout(content: string) {
 
 export function welcomeEmail() {
   return {
-    subject: "Welcome to the Terminally Offline Club",
+    subject: "Welcome to Terminally Offline",
     html: layout(`
       <h1 style="font-size:24px;color:${BRAND.dark};margin:0 0 8px 0;font-weight:700;">
-        Welcome to the club.
+        Thanks for subscribing.
       </h1>
       <p style="color:${BRAND.green};font-size:13px;font-family:monospace;letter-spacing:2px;margin:0 0 24px 0;text-transform:uppercase;">
         You're in.
       </p>
 
       <p style="color:${BRAND.grey};line-height:1.7;margin:0 0 20px 0;font-size:15px;">
-        You've taken the first step toward reclaiming your attention. The 30-Day Offline Challenge
-        launches with <strong>Offline October 2026</strong> — and you'll be among the first to start.
+        We'll send you the occasional email — new journal articles, ideas for disconnecting, and honest reflections on what it's like to build a website that asks people to stop looking at websites.
       </p>
 
       <p style="color:${BRAND.grey};line-height:1.7;margin:0 0 24px 0;font-size:15px;">
-        Here's what happens next:
+        In the meantime, here's a small idea: put your phone in another room for one hour today. No checking. See what happens.
       </p>
-
-      <div style="margin:0 0 24px 0;">
-        <div style="display:flex;margin-bottom:16px;">
-          <div style="color:${BRAND.green};font-weight:700;font-size:14px;font-family:monospace;min-width:24px;">1.</div>
-          <div style="color:${BRAND.grey};font-size:14px;line-height:1.6;">
-            <strong style="color:${BRAND.dark};">We'll send you the rules.</strong>
-            Four simple guidelines for your 30 days offline — nothing extreme, just intentional.
-          </div>
-        </div>
-        <div style="display:flex;margin-bottom:16px;">
-          <div style="color:${BRAND.green};font-weight:700;font-size:14px;font-family:monospace;min-width:24px;">2.</div>
-          <div style="color:${BRAND.grey};font-size:14px;line-height:1.6;">
-            <strong style="color:${BRAND.dark};">You'll get a prep guide.</strong>
-            A week before launch, we'll share practical tips for setting yourself up to succeed.
-          </div>
-        </div>
-        <div style="display:flex;margin-bottom:16px;">
-          <div style="color:${BRAND.green};font-weight:700;font-size:14px;font-family:monospace;min-width:24px;">3.</div>
-          <div style="color:${BRAND.grey};font-size:14px;line-height:1.6;">
-            <strong style="color:${BRAND.dark};">October 1st, we go offline.</strong>
-            Together. No social media, phone in the drawer by 9pm, present at meals, screen-free five days a week.
-          </div>
-        </div>
-      </div>
 
       <div style="background:${BRAND.cream};border-radius:12px;padding:20px 24px;margin:0 0 24px 0;">
         <p style="color:${BRAND.dark};font-size:14px;line-height:1.6;margin:0;font-style:italic;">
@@ -93,47 +68,16 @@ export function welcomeEmail() {
         </p>
       </div>
 
-      <p style="color:${BRAND.grey};line-height:1.7;margin:0 0 24px 0;font-size:15px;">
-        In the meantime, here's a small challenge: put your phone in another room for one hour today.
-        No checking. See what happens. Consider it practice.
-      </p>
-
       <!-- CTA -->
       <div style="text-align:center;margin:32px 0 8px 0;">
-        <a href="${BRAND.url}/challenge" style="display:inline-block;background:${BRAND.green};color:white;padding:14px 32px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;">
-          Read the Challenge Rules
+        <a href="${BRAND.url}/disconnect" style="display:inline-block;background:${BRAND.green};color:white;padding:14px 32px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;">
+          Ideas for Disconnecting
         </a>
       </div>
 
       <p style="color:${BRAND.lightGrey};font-size:13px;text-align:center;margin-top:24px;">
         See you on the other side.<br/>
-        — The Terminally Offline Club
-      </p>
-    `),
-  };
-}
-
-export function contactConfirmationEmail(name: string) {
-  return {
-    subject: "We received your enquiry — Terminally Offline",
-    html: layout(`
-      <h1 style="font-size:24px;color:${BRAND.dark};margin:0 0 24px 0;font-weight:700;">
-        Thanks, ${name}.
-      </h1>
-      <p style="color:${BRAND.grey};line-height:1.7;margin:0 0 20px 0;font-size:15px;">
-        We've received your enquiry about the Offline for Teams programme. We'll review your message
-        and get back to you within 2 business days.
-      </p>
-      <p style="color:${BRAND.grey};line-height:1.7;margin:0 0 20px 0;font-size:15px;">
-        In the meantime, feel free to explore the challenge that started it all:
-      </p>
-      <div style="text-align:center;margin:32px 0 8px 0;">
-        <a href="${BRAND.url}/teams" style="display:inline-block;background:${BRAND.green};color:white;padding:14px 32px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;">
-          View the Programme
-        </a>
-      </div>
-      <p style="color:${BRAND.lightGrey};font-size:13px;text-align:center;margin-top:24px;">
-        — The Terminally Offline Club
+        — Terminally Offline
       </p>
     `),
   };

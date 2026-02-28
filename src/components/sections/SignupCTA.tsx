@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/Button";
 const initialState = { success: false, message: "" };
 
 export function SignupCTA({
-  heading = "Ready to disconnect?",
-  subheading = "Join the founding members of the 30-Day Offline Challenge. Be the first to know when we launch.",
+  heading = "Stay in touch (ironically)",
+  subheading = "Occasional emails about disconnecting. No spam, no noise — just honest ideas from the offline world.",
 }: {
   heading?: string;
   subheading?: string;
@@ -23,7 +23,7 @@ export function SignupCTA({
     <section className="py-20 md:py-28 bg-volcanic text-cloud">
       <Container size="sm" className="text-center">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-lakes mb-4">
-          Join the Club
+          Newsletter
         </p>
         <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">{heading}</h2>
         <p className="text-base text-cloud/60 mb-10 max-w-md mx-auto leading-relaxed">
@@ -47,7 +47,7 @@ export function SignupCTA({
               className="flex-1 px-5 py-3.5 rounded-full border border-cloud/20 bg-white/10 text-cloud placeholder:text-cloud/40 focus:outline-none focus:ring-2 focus:ring-emerald-lakes focus:border-transparent transition-all backdrop-blur-sm"
             />
             <Button type="submit" disabled={pending} className="whitespace-nowrap">
-              {pending ? "Joining..." : "Join the Club"}
+              {pending ? "Subscribing..." : "Subscribe"}
             </Button>
           </form>
         )}

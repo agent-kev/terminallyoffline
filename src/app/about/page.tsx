@@ -7,39 +7,29 @@ import { HERO_IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story behind Terminally Offline. A New Zealand-rooted movement proving that disconnection is the ultimate luxury.",
+    "The story behind Terminally Offline. Encouragement to disconnect, from Aotearoa, New Zealand.",
 };
 
 const values = [
   {
     title: "Intention Over Abstinence",
     description:
-      "We don't believe in throwing your phone in a lake. We believe in using technology on your terms — deliberately, sparingly, and with full awareness of the trade-offs.",
+      "We don't believe in throwing your phone in a lake. We believe in choosing when you engage with technology — deliberately, sparingly, and with full awareness of the trade-offs.",
   },
   {
-    title: "Presence Is the Product",
+    title: "Presence Is the Point",
     description:
-      "The challenge isn't about willpower. It's about discovering what happens when you stop filling every moment with stimulation. The boredom is the feature, not the bug.",
-  },
-  {
-    title: "Verification, Not Trust",
-    description:
-      "Anyone can claim they went offline. We're building systems — from self-reporting to zero-knowledge proofs — that let you prove it. Cryptographically.",
+      "This isn't about willpower or streaks. It's about discovering what happens when you stop filling every moment with stimulation. The boredom is the feature, not the bug.",
   },
   {
     title: "Rooted in Aotearoa",
     description:
-      "Born in New Zealand, where the bush is still louder than the internet. Our design, philosophy, and pace reflect the landscapes that inspired this movement.",
-  },
-  {
-    title: "Community Over Competition",
-    description:
-      "This isn't about who can last longest without a phone. It's about a growing group of people who've decided that being unreachable is worth celebrating.",
+      "Born in New Zealand, where the bush is still louder than the internet. Our design, philosophy, and pace reflect the landscapes that inspired this project.",
   },
   {
     title: "Privacy by Default",
     description:
-      "We collect minimal data, use no tracking cookies, and are building toward zero-knowledge verification. Your disconnection is your business.",
+      "We collect minimal data, use no tracking cookies, and don't sell anything. Your attention is yours. We're just here to remind you of that.",
   },
 ];
 
@@ -48,12 +38,12 @@ export default function AboutPage() {
     <>
       <Hero
         title="The Story"
-        subtitle="Why a movement about going offline started on the internet."
-        ctaText="Take the Challenge"
-        ctaHref="/challenge"
+        subtitle="Why a project about going offline started on the internet."
+        ctaText="Disconnect"
+        ctaHref="/disconnect"
         height="half"
-        imageSrc={HERO_IMAGES.home}
-        imageAlt="Misty New Zealand mountain peaks"
+        imageSrc={HERO_IMAGES.about}
+        imageAlt="Morning light through mountain fog"
       />
 
       {/* Origin */}
@@ -68,28 +58,28 @@ export default function AboutPage() {
           <div className="space-y-6 text-base text-foreground/65 leading-relaxed">
             <p>
               What would happen if you just... stopped? Not forever. Not
-              dramatically. Just for a month. What if you deleted the apps,
-              silenced the notifications, and let yourself be bored?
+              dramatically. Just for a bit. What if you put the phone in another
+              room and let yourself be bored?
             </p>
             <p>
-              The Terminally Offline Club was founded in Aotearoa, New Zealand in
-              2026 — born from the observation that the people who seemed most
-              alive were the ones least connected. The surfers who left their
-              phones in the car. The trampers who disappeared into the bush for
-              days. The families who still ate dinner without a screen on the
-              table.
+              Terminally Offline started in Aotearoa, New Zealand in 2026 —
+              born from the observation that the people who seemed most alive
+              were the ones least connected. The surfers who left their phones
+              in the car. The trampers who disappeared into the bush for days.
+              The families who still ate dinner without a screen on the table.
             </p>
             <p>
               We noticed something else too: a growing exhaustion. Nine hours a
-              day on screens. Seventy-three percent of people feeling depleted by
-              constant connectivity. A generation that couldn&apos;t remember what
-              silence felt like.
+              day on screens. A generation that couldn&apos;t remember what
+              silence felt like. And a lot of websites telling people how bad
+              their screen time was, without actually helping them put the
+              phone down.
             </p>
             <p>
-              So we built a challenge. Four simple rules. Thirty days. And a way
-              to prove you did it — not with a screenshot, but with cryptographic
-              verification. Because in the attention economy, being unreachable
-              isn&apos;t just radical. It&apos;s an achievement worth proving.
+              So we built this. Not a programme, not a product, not a company.
+              Just a website with some encouragement and a few gentle ideas.
+              If it helps one person put their phone down for an hour, that&apos;s
+              enough.
             </p>
           </div>
         </div>
@@ -111,9 +101,9 @@ export default function AboutPage() {
               for blue light.
             </p>
             <p>
-              The Terminally Offline Club exists because the most radical thing
-              you can do in 2026 is put your phone down. This isn&apos;t
-              anti-technology. It&apos;s pro-intention.
+              Terminally Offline exists because the most radical thing you can
+              do in 2026 is put your phone down. This isn&apos;t anti-technology.
+              It&apos;s pro-intention.
             </p>
             <p>
               We&apos;re not Luddites — we&apos;re people who&apos;ve decided that being
@@ -132,11 +122,11 @@ export default function AboutPage() {
             What We Stand For
           </h2>
           <p className="mt-4 text-sm text-foreground/65 max-w-lg mx-auto">
-            Six principles that guide everything we build.
+            Four principles that guide everything we build.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {values.map((value) => (
             <div
               key={value.title}

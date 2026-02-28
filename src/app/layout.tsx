@@ -28,7 +28,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} — The 30-Day Offline Challenge`,
+    default: `${SITE_NAME} — Encouragement to Disconnect`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -60,6 +60,7 @@ const jsonLd = {
     name: "Aotearoa, New Zealand",
   },
   sameAs: [
+    "https://x.com/termoffline",
     "https://instagram.com/terminallyoffline",
     "https://tiktok.com/@terminallyoffline",
   ],

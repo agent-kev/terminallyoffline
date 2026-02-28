@@ -1,16 +1,15 @@
 # Terminally Offline — Project Guide
 
 ## What This Is
-A New Zealand-rooted digital wellness brand at terminallyoffline.club. The 30-Day Offline Challenge encourages people to reduce screen time. The website is the public face: marketing pages, blog (7 articles), email capture, teams programme, shop, and Offline Passport (soulbound NFT on Base).
+A New Zealand-rooted digital wellness project at terminallyoffline.club. Ethical, non-profit encouragement to disconnect. No monetization, no products, no corporate programmes — just a beautiful website with ideas for putting your phone down, a journal, and an email subscribe.
 
 ## Tech Stack
 - **Framework**: Next.js 16+ with App Router, `src/` directory, TypeScript
 - **Styling**: Tailwind CSS v4 with `@theme inline` design tokens in `globals.css`
 - **MDX**: `@next/mdx` for journal articles (no frontmatter — uses `export const metadata`)
-- **Email**: Resend SDK (lazy `getResend()` in `src/lib/resend.ts`), branded HTML templates in `src/lib/email-templates.ts`
+- **Email**: Resend SDK (lazy `getResend()` in `src/lib/resend.ts`), branded HTML template in `src/lib/email-templates.ts`
 - **Themes**: `next-themes` with `class` strategy
 - **Analytics**: Plausible (privacy-friendly, no cookies)
-- **Blockchain**: Soulbound ERC-721 on Base L2 (metadata API at `/api/passport/`)
 
 ## Design System
 Brand colors defined in `globals.css` `:root`:
@@ -34,38 +33,30 @@ Semantic tokens resolve differently in `.dark` class. Use semantic names (`bg-pr
 
 ## Key Conventions
 - Server Components by default; `"use client"` only when needed
-- Forms use Server Actions with `useActionState` (subscribe) or fetch + useState (contact)
+- Forms use Server Actions with `useActionState` (subscribe)
 - Hero images from Unsplash via `next/image` remote patterns
 - Journal articles in `src/content/journal/*.mdx` with `export const metadata = {...}`
-- Components: `src/components/ui/` (primitives), `src/components/layout/` (header/footer), `src/components/sections/` (page sections), `src/components/journal/` (blog), `src/components/shop/` (shop)
-- No CMS — products, tiers, roadmap data are hardcoded arrays in page files
-- HTML-escape all user input before injecting into email HTML (see `escapeHtml()` in contact route)
-- All `<label>` elements must use `htmlFor` with matching `id` on inputs (Input component uses `useId()`)
+- Components: `src/components/ui/` (primitives), `src/components/layout/` (header/footer), `src/components/sections/` (page sections), `src/components/journal/` (blog)
+- No CMS — all content is in code or MDX files
+- All `<label>` elements must use `htmlFor` with matching `id` on inputs
 - Decorative SVGs get `aria-hidden="true"`
 
 ## Routes
 | Path | Purpose |
 |------|---------|
-| `/` | Homepage (hero, stats, how-it-works, countdown, manifesto, signup, testimonials) |
-| `/challenge` | 30-Day Challenge (rules, weekly breakdown, benefits, FAQ) |
-| `/passport` | Offline Passport + NFT tiers + roadmap |
-| `/gallery` | Photo gallery (coming soon — blurred placeholder images) |
-| `/journal` | Blog index (7 articles) |
+| `/` | Homepage (hero, manifesto, subscribe) |
+| `/disconnect` | Gentle invitation to disconnect (ideas grid, tag-out concept, FAQ) |
+| `/journal` | Blog index (2 articles) |
 | `/journal/[slug]` | Blog articles (with share buttons + per-article OG image) |
-| `/teams` | Corporate programme + contact form |
-| `/shop` | 10 curated products with affiliate links |
-| `/about` | Origin story, manifesto, values, "Why NZ?" |
+| `/about` | Origin story, manifesto, values (4), "Why NZ?" |
 | `/privacy` | Privacy policy |
 | `/terms` | Terms of use |
 | `/api/subscribe` | Email signup (Resend audience + welcome email) |
-| `/api/contact` | Teams enquiry (internal notification + confirmation email) |
-| `/api/passport/metadata/[tokenId]` | ERC-721 metadata JSON |
-| `/api/passport/image/[tier]` | Dynamic NFT tier images (next/og) |
 | `/journal/feed.xml` | RSS feed |
 
 ## SEO & Structured Data
 - **OG images**: Every page + every journal article has a dedicated `opengraph-image.tsx` using `src/lib/og-image.tsx`
-- **JSON-LD**: Organization (layout), Article (journal posts), FAQPage (challenge), ItemList/Product (shop)
+- **JSON-LD**: Organization (layout), FAQPage (disconnect)
 - **Twitter cards**: `summary_large_image` configured in root metadata
 - **Sitemap**: `src/app/sitemap.ts` — all pages + dynamic journal slugs
 - **Robots**: `src/app/robots.ts` — allows all except `/api/`
@@ -74,20 +65,14 @@ Semantic tokens resolve differently in `.dark` class. Use semantic names (`bg-pr
 ## Security
 - **CSP header** in `vercel.json` — restricts scripts, images, frames, objects
 - **Security headers**: X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy, Permissions-Policy
-- **Input validation**: Zod schemas on all API inputs
-- **HTML escaping**: User input escaped before email HTML injection
+- **Input validation**: Zod schema on subscribe API input
 - **No user-generated content** rendered in the browser
 
-## Journal Articles (7)
+## Journal Articles (2)
 | Slug | Topic |
 |------|-------|
-| `the-case-for-boredom` | Science of boredom + Default Mode Network |
-| `your-phone-is-not-a-tool` | Reframing "phone as tool" argument |
-| `30-days-offline-what-i-learned` | First-person challenge narrative |
-| `the-dopamine-economy` | Variable reward schedules + notification design |
-| `a-beginners-guide-to-digital-minimalism` | 5-step practical framework |
-| `screen-time-statistics-2026` | Data-heavy stats article (SEO) |
-| `what-is-a-digital-detox` | Evergreen guide (SEO) |
+| `why-we-built-this` | Honest origin story, acknowledges the irony, NZ roots |
+| `your-brain-on-boredom` | DMN neuroscience, real citations, accessible tone |
 
 ## Environment Variables
 ```
@@ -100,16 +85,17 @@ NEXT_PUBLIC_PLAUSIBLE_DOMAIN=  # Optional analytics
 ## Commands
 ```bash
 npm run dev     # Start dev server (Turbopack) — localhost:3000
-npm run build   # Production build (expect ~40 static routes)
+npm run build   # Production build
 npm run lint    # ESLint
 ```
 
-## Pre-Deploy Checklist (Kevin)
-- [ ] Resend: create account, verify domain, create audience, get API key
-- [ ] GitHub: create repo, push code
-- [ ] Vercel: connect repo, set env vars, deploy
-- [ ] DNS: point terminallyoffline.club to Vercel
-- [ ] Plausible: set up, add `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`
-- [ ] Social: create @terminallyoffline on Instagram + TikTok
-- [ ] Shop: replace placeholder affiliate URLs with real ones
-- [ ] Photography: source original NZ images for heroes
+## Brand Concept
+**Tag out / Tag in** — borrowed from wrestling. Tag out from digital, tag in to real. Not about quitting technology — about choosing when you engage with it.
+
+## Social
+- X / Twitter: @termoffline
+- Instagram: @terminallyoffline
+- TikTok: @terminallyoffline
+
+## Running Cost
+$0 — Vercel free tier + Resend free tier.

@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/Button";
 export function Hero({
   title,
   subtitle,
-  ctaText = "Take the Challenge",
-  ctaHref = "/challenge",
+  ctaText = "Disconnect",
+  ctaHref = "/disconnect",
   imageSrc,
   imageAlt = "Hero background",
   height = "full",

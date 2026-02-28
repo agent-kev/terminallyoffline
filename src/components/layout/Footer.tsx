@@ -16,8 +16,10 @@ export function Footer() {
               Terminally Offline
             </Link>
             <p className="mt-4 text-cloud/50 text-sm leading-relaxed max-w-xs">
-              A New Zealand-rooted movement proving that the ultimate luxury in
-              2026 is being unreachable.
+              Encouragement to disconnect. From Aotearoa, New Zealand.
+            </p>
+            <p className="mt-3 text-cloud/50 text-xs leading-relaxed max-w-xs font-mono tracking-wide">
+              Tag out from digital. Tag in to real.
             </p>
           </div>
 
@@ -36,12 +38,6 @@ export function Footer() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/about"
-                className="text-sm text-cloud/60 hover:text-cloud transition-colors w-fit"
-              >
-                About
-              </Link>
             </nav>
           </div>
 
@@ -51,6 +47,14 @@ export function Footer() {
               Connect
             </p>
             <nav className="flex flex-col gap-2.5">
+              <a
+                href={SOCIAL_LINKS.x}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-cloud/60 hover:text-cloud transition-colors w-fit"
+              >
+                X / Twitter
+              </a>
               <a
                 href={SOCIAL_LINKS.instagram}
                 target="_blank"
@@ -101,7 +105,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-cloud/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-cloud/50">
-            &copy; {new Date().getFullYear()} Terminally Offline Club. Made in Aotearoa.
+            &copy; {new Date().getFullYear()} Terminally Offline. Made in Aotearoa.
           </p>
           <p className="text-[10px] text-cloud/50 font-mono tracking-wider">
             Built offline, obviously.

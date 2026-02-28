@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/Section";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Terminally Offline Club collects, uses, and protects your personal information.",
+    "How Terminally Offline collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-sm text-foreground/50 font-mono mb-12">
-            Last updated: 27 February 2026
+            Last updated: 28 February 2026
           </p>
 
           <div className="space-y-10 text-foreground/70 text-sm leading-relaxed">
@@ -28,11 +28,11 @@ export default function PrivacyPage() {
                 1. Who We Are
               </h2>
               <p>
-                Terminally Offline Club (&ldquo;we&rdquo;, &ldquo;us&rdquo;,
-                &ldquo;our&rdquo;) is a New Zealand-based digital wellness brand
-                operating at terminallyoffline.club. We are committed to
-                protecting your privacy — especially given that our entire
-                mission is about reducing your digital footprint.
+                Terminally Offline (&ldquo;we&rdquo;, &ldquo;us&rdquo;,
+                &ldquo;our&rdquo;) is a New Zealand-based non-profit digital
+                wellness project operating at terminallyoffline.club. We are
+                committed to protecting your privacy — especially given that our
+                entire mission is about reducing your digital footprint.
               </p>
             </div>
 
@@ -46,13 +46,8 @@ export default function PrivacyPage() {
               <ul className="list-disc pl-6 space-y-2">
                 <li>
                   <strong className="text-foreground">Email address</strong> —
-                  when you sign up for the 30-Day Offline Challenge or our
-                  newsletter. This is the only personal data we require.
-                </li>
-                <li>
-                  <strong className="text-foreground">Contact form data</strong>{" "}
-                  — name, company, email, and message when you enquire about our
-                  Teams programme.
+                  when you subscribe to our newsletter. This is the only
+                  personal data we collect.
                 </li>
                 <li>
                   <strong className="text-foreground">
@@ -65,9 +60,8 @@ export default function PrivacyPage() {
               </ul>
               <p className="mt-3">
                 We do <strong className="text-foreground">not</strong> collect:
-                phone numbers, physical addresses, payment information (unless
-                you make a purchase), social media profiles, or any data from
-                your devices.
+                phone numbers, physical addresses, payment information, social
+                media profiles, or any data from your devices.
               </p>
             </div>
 
@@ -77,14 +71,12 @@ export default function PrivacyPage() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  To send you challenge-related communications and updates
+                  To send you occasional emails about new articles and ideas for
+                  disconnecting
                 </li>
-                <li>To respond to your enquiries about team programmes</li>
                 <li>
-                  To improve our website and services through anonymised
-                  analytics
+                  To improve our website through anonymised analytics
                 </li>
-                <li>To issue and verify Offline Passports</li>
               </ul>
               <p className="mt-3">
                 We will never sell, rent, or share your personal information with
@@ -97,9 +89,9 @@ export default function PrivacyPage() {
                 4. Email Communications
               </h2>
               <p>
-                When you sign up, you consent to receiving occasional emails
-                about the Offline Challenge, our journal articles, and product
-                updates. Every email includes an unsubscribe link. We use{" "}
+                When you subscribe, you consent to receiving occasional emails
+                about our journal articles and ideas for disconnecting. Every
+                email includes an unsubscribe link. We use{" "}
                 <a
                   href="https://resend.com"
                   target="_blank"
@@ -171,7 +163,7 @@ export default function PrivacyPage() {
                 <li>Access the personal information we hold about you</li>
                 <li>Request correction of inaccurate information</li>
                 <li>Request deletion of your personal information</li>
-                <li>Unsubscribe from marketing communications at any time</li>
+                <li>Unsubscribe from email communications at any time</li>
                 <li>Lodge a complaint with the NZ Privacy Commissioner</li>
               </ul>
               <p className="mt-3">
@@ -191,7 +183,7 @@ export default function PrivacyPage() {
                 9. Children&apos;s Privacy
               </h2>
               <p>
-                Our services are not directed at children under 16. We do not
+                Our website is not directed at children under 16. We do not
                 knowingly collect personal information from children. If you
                 believe a child has provided us with personal information, please
                 contact us and we will delete it promptly.
@@ -225,7 +217,7 @@ export default function PrivacyPage() {
                 .
               </p>
               <p className="mt-2">
-                Terminally Offline Club
+                Terminally Offline
                 <br />
                 Aotearoa, New Zealand
               </p>

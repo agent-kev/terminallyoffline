@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Terminally Offline — The 30-Day Offline Challenge";
+export const alt = "Terminally Offline — Encouragement to Disconnect";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -78,8 +78,7 @@ export default function OGImage() {
             maxWidth: 700,
           }}
         >
-          The ultimate luxury in 2026 is being unreachable. Join the 30-Day
-          Offline Challenge.
+          Encouragement to disconnect. From Aotearoa, New Zealand.
         </p>
 
         {/* URL */}

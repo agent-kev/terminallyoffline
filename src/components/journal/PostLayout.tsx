@@ -51,7 +51,7 @@ export function PostLayout({
 
       <SignupCTA
         heading="Enjoyed this?"
-        subheading="Get more dispatches from the offline world. Join the 30-Day Offline Challenge."
+        subheading="Occasional emails about disconnecting. No spam, no noise — just honest ideas from the offline world."
       />
     </>
   );
