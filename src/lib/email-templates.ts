@@ -31,7 +31,7 @@ function layout(content: string) {
     <!-- Footer -->
     <div style="text-align:center;margin-top:32px;padding:0 16px;">
       <p style="color:${BRAND.lightGrey};font-size:12px;line-height:1.6;margin:0;">
-        Terminally Offline &middot; Aotearoa, New Zealand<br/>
+        Terminally Offline<br/>
         <a href="${BRAND.url}" style="color:${BRAND.green};text-decoration:none;">terminallyoffline.club</a>
       </p>
       <p style="color:#ccc;font-size:11px;margin-top:16px;font-family:monospace;letter-spacing:1px;">

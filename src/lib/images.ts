@@ -1,5 +1,5 @@
 // Unsplash images — served via Next.js Image optimization
-// All photos are landscape/nature themed to match the NZ brand
+// All photos are landscape/nature themed
 
 export const HERO_IMAGES = {
   // Misty mountain peaks — dramatic, moody

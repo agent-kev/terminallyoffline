@@ -25,7 +25,7 @@ export async function GET() {
     <title>${SITE_NAME} — Journal</title>
     <link>${SITE_URL}/journal</link>
     <description>${SITE_DESCRIPTION}</description>
-    <language>en-nz</language>
+    <language>en</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${SITE_URL}/journal/feed.xml" rel="self" type="application/rss+xml" />
     ${items}

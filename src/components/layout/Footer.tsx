@@ -16,7 +16,7 @@ export function Footer() {
               Terminally Offline
             </Link>
             <p className="mt-4 text-cloud/50 text-sm leading-relaxed max-w-xs">
-              Encouragement to disconnect. From Aotearoa, New Zealand.
+              Encouragement to disconnect.
             </p>
             <p className="mt-3 text-cloud/50 text-xs leading-relaxed max-w-xs font-mono tracking-wide">
               Tag out from digital. Tag in to real.
@@ -105,7 +105,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-cloud/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-cloud/50">
-            &copy; {new Date().getFullYear()} Terminally Offline. Made in Aotearoa.
+            &copy; {new Date().getFullYear()} Terminally Offline.
           </p>
           <p className="text-[10px] text-cloud/50 font-mono tracking-wider">
             Built offline, obviously.

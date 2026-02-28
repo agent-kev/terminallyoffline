@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
-    locale: "en_NZ",
+    locale: "en",
     type: "website",
   },
   twitter: {
@@ -55,10 +55,6 @@ const jsonLd = {
   url: SITE_URL,
   description: SITE_DESCRIPTION,
   foundingDate: "2026",
-  foundingLocation: {
-    "@type": "Place",
-    name: "Aotearoa, New Zealand",
-  },
   sameAs: [
     "https://x.com/termoffline",
     "https://instagram.com/terminallyoffline",

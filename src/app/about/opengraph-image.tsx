@@ -7,7 +7,7 @@ export const contentType = ogContentType;
 export default function OGImage() {
   return createOGImage({
     title: "The Story",
-    subtitle: "A New Zealand-rooted movement proving that disconnection is the ultimate luxury.",
+    subtitle: "The story behind Terminally Offline.",
     label: "About",
   });
 }

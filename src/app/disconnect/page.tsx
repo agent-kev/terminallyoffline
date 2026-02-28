@@ -9,7 +9,7 @@ import { HERO_IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Disconnect",
   description:
-    "Not a programme. Just an invitation to try putting your phone down. Gentle ideas for disconnecting, from Aotearoa, New Zealand.",
+    "Not a programme. Just an invitation to try putting your phone down. Gentle ideas for disconnecting.",
 };
 
 const ideas = [
@@ -70,12 +70,12 @@ const faqItems = [
   {
     question: "Why is this free? What's the catch?",
     answer:
-      "There's no catch. This is a non-profit project from New Zealand. No ads, no sponsors, no data harvesting. We built it because we think the internet has enough noise, and not enough encouragement to step away from it.",
+      "There's no catch. This is a non-profit project. No ads, no sponsors, no data harvesting. We built it because we think the internet has enough noise, and not enough encouragement to step away from it.",
   },
   {
     question: "Who is behind this?",
     answer:
-      "A small team in Aotearoa, New Zealand. We're not experts or gurus — just people who noticed we felt better when we put our phones down, and thought others might too.",
+      "A small team. We're not experts or gurus — just people who noticed we felt better when we put our phones down, and thought others might too.",
   },
 ];
 

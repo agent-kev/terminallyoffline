@@ -7,7 +7,7 @@ import { HERO_IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story behind Terminally Offline. Encouragement to disconnect, from Aotearoa, New Zealand.",
+    "The story behind Terminally Offline. Encouragement to disconnect.",
 };
 
 const values = [
@@ -22,9 +22,9 @@ const values = [
       "This isn't about willpower or streaks. It's about discovering what happens when you stop filling every moment with stimulation. The boredom is the feature, not the bug.",
   },
   {
-    title: "Rooted in Aotearoa",
+    title: "Non-Profit, Non-Preachy",
     description:
-      "Born in New Zealand, where the bush is still louder than the internet. Our design, philosophy, and pace reflect the landscapes that inspired this project.",
+      "We don't sell anything. We don't guilt anyone. This is a free project built by people who felt better when they put their phones down, and thought others might too.",
   },
   {
     title: "Privacy by Default",
@@ -62,11 +62,11 @@ export default function AboutPage() {
               room and let yourself be bored?
             </p>
             <p>
-              Terminally Offline started in Aotearoa, New Zealand in 2026 —
-              born from the observation that the people who seemed most alive
-              were the ones least connected. The surfers who left their phones
-              in the car. The trampers who disappeared into the bush for days.
-              The families who still ate dinner without a screen on the table.
+              Terminally Offline started in 2026 — born from the observation
+              that the people who seemed most alive were the ones least
+              connected. The ones who left their phones in the car. Who
+              disappeared into nature for days. The families who still ate
+              dinner without a screen on the table.
             </p>
             <p>
               We noticed something else too: a growing exhaustion. Nine hours a
@@ -97,7 +97,7 @@ export default function AboutPage() {
           <div className="space-y-6 text-base sm:text-lg text-cloud/80 leading-relaxed text-left sm:text-center">
             <p>
               Somewhere between the scroll and the swipe, we forgot what silence
-              sounds like. We traded campfires for content feeds and bush walks
+              sounds like. We traded campfires for content feeds and long walks
               for blue light.
             </p>
             <p>
@@ -138,32 +138,6 @@ export default function AboutPage() {
               </p>
             </div>
           ))}
-        </div>
-      </Section>
-
-      {/* NZ Roots */}
-      <Section>
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary mb-3">
-            Made in Aotearoa
-          </p>
-          <h2 className="font-display text-2xl sm:text-3xl font-bold mb-6">
-            Why New Zealand?
-          </h2>
-          <p className="text-base text-foreground/65 leading-relaxed mb-6">
-            New Zealand is one of the last places on earth where you can still
-            find genuine silence. Where the bush canopy blocks the signal and the
-            mountains don&apos;t care about your notifications. This landscape
-            shaped our philosophy: that the best things happen when you&apos;re not
-            looking at a screen.
-          </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
-            Our design language draws from the palette of Aotearoa — the deep
-            greens of native bush, the volcanic blacks, the cream of cloud cover
-            over the Southern Alps, and the jade tones of pounamu. Every colour,
-            every texture is rooted in the physical world we&apos;re asking you to
-            rejoin.
-          </p>
         </div>
       </Section>
 

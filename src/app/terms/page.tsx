@@ -83,8 +83,8 @@ export default function TermsPage() {
               <p>
                 All content on the Website — including text, design, graphics,
                 logos, the Terminally Offline brand, and journal articles — is
-                owned by Terminally Offline and protected by New Zealand and
-                international copyright law. You may not reproduce, distribute,
+                owned by Terminally Offline and protected by international
+                copyright law. You may not reproduce, distribute,
                 or create derivative works from our content without written
                 permission.
               </p>
@@ -108,7 +108,7 @@ export default function TermsPage() {
                 6. Limitation of Liability
               </h2>
               <p>
-                To the maximum extent permitted by New Zealand law, Terminally
+                To the maximum extent permitted by applicable law, Terminally
                 Offline shall not be liable for any indirect, incidental,
                 special, consequential, or punitive damages arising from your use
                 of the Website.
@@ -133,9 +133,9 @@ export default function TermsPage() {
                 8. Governing Law
               </h2>
               <p>
-                These terms are governed by the laws of New Zealand. Any disputes
-                shall be subject to the exclusive jurisdiction of the New Zealand
-                courts.
+                These terms are governed by applicable law. Any disputes
+                Any disputes shall be resolved in the jurisdiction of the
+                applicable courts.
               </p>
             </div>
 
@@ -155,8 +155,6 @@ export default function TermsPage() {
               </p>
               <p className="mt-2">
                 Terminally Offline
-                <br />
-                Aotearoa, New Zealand
               </p>
             </div>
           </div>

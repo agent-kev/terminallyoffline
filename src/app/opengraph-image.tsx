@@ -78,7 +78,7 @@ export default function OGImage() {
             maxWidth: 700,
           }}
         >
-          Encouragement to disconnect. From Aotearoa, New Zealand.
+          Encouragement to disconnect.
         </p>
 
         {/* URL */}

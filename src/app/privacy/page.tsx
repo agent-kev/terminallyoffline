@@ -29,10 +29,10 @@ export default function PrivacyPage() {
               </h2>
               <p>
                 Terminally Offline (&ldquo;we&rdquo;, &ldquo;us&rdquo;,
-                &ldquo;our&rdquo;) is a New Zealand-based non-profit digital
-                wellness project operating at terminallyoffline.club. We are
-                committed to protecting your privacy — especially given that our
-                entire mission is about reducing your digital footprint.
+                &ldquo;our&rdquo;) is a non-profit digital wellness project
+                operating at terminallyoffline.club. We are committed to
+                protecting your privacy — especially given that our entire
+                mission is about reducing your digital footprint.
               </p>
             </div>
 
@@ -156,15 +156,14 @@ export default function PrivacyPage() {
                 8. Your Rights
               </h2>
               <p className="mb-3">
-                Under the New Zealand Privacy Act 2020 and applicable
-                international privacy laws, you have the right to:
+                Under applicable privacy laws, you have the right to:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Access the personal information we hold about you</li>
                 <li>Request correction of inaccurate information</li>
                 <li>Request deletion of your personal information</li>
                 <li>Unsubscribe from email communications at any time</li>
-                <li>Lodge a complaint with the NZ Privacy Commissioner</li>
+                <li>Lodge a complaint with the relevant privacy authority</li>
               </ul>
               <p className="mt-3">
                 To exercise any of these rights, email us at{" "}
@@ -218,8 +217,6 @@ export default function PrivacyPage() {
               </p>
               <p className="mt-2">
                 Terminally Offline
-                <br />
-                Aotearoa, New Zealand
               </p>
             </div>
           </div>

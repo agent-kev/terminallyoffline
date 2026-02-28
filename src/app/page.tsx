@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero
         title="The ultimate luxury is being unreachable."
-        subtitle="Encouragement to disconnect. From Aotearoa, New Zealand."
+        subtitle="Encouragement to disconnect."
         ctaText="Disconnect"
         ctaHref="/disconnect"
         imageSrc={HERO_IMAGES.home}
@@ -23,7 +23,7 @@ export default function Home() {
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-cloud/80 mb-6">
             Somewhere between the scroll and the swipe, we forgot what silence
-            sounds like. We traded campfires for content feeds and bush walks for
+            sounds like. We traded campfires for content feeds and long walks for
             blue light. Terminally Offline exists because the most radical thing
             you can do in 2026 is put your phone down.
           </p>

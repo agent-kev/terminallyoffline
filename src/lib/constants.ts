@@ -1,7 +1,7 @@
 export const SITE_NAME = "Terminally Offline";
 export const SITE_URL = "https://terminallyoffline.club";
 export const SITE_DESCRIPTION =
-  "Encouragement to disconnect. From Aotearoa, New Zealand.";
+  "Encouragement to disconnect.";
 
 export const NAV_LINKS = [
   { label: "Disconnect", href: "/disconnect" },

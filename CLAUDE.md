@@ -1,7 +1,7 @@
 # Terminally Offline — Project Guide
 
 ## What This Is
-A New Zealand-rooted digital wellness project at terminallyoffline.club. Ethical, non-profit encouragement to disconnect. No monetization, no products, no corporate programmes — just a beautiful website with ideas for putting your phone down, a journal, and an email subscribe.
+An ethical, non-profit digital wellness project at terminallyoffline.club. Encouragement to disconnect. No monetization, no products, no corporate programmes — just a beautiful website with ideas for putting your phone down, a journal, and an email subscribe.
 
 ## Tech Stack
 - **Framework**: Next.js 16+ with App Router, `src/` directory, TypeScript
@@ -48,7 +48,7 @@ Semantic tokens resolve differently in `.dark` class. Use semantic names (`bg-pr
 | `/disconnect` | Gentle invitation to disconnect (ideas grid, tag-out concept, FAQ) |
 | `/journal` | Blog index (2 articles) |
 | `/journal/[slug]` | Blog articles (with share buttons + per-article OG image) |
-| `/about` | Origin story, manifesto, values (4), "Why NZ?" |
+| `/about` | Origin story, manifesto, values (4) |
 | `/privacy` | Privacy policy |
 | `/terms` | Terms of use |
 | `/api/subscribe` | Email signup (Resend audience + welcome email) |
@@ -71,7 +71,7 @@ Semantic tokens resolve differently in `.dark` class. Use semantic names (`bg-pr
 ## Journal Articles (2)
 | Slug | Topic |
 |------|-------|
-| `why-we-built-this` | Honest origin story, acknowledges the irony, NZ roots |
+| `why-we-built-this` | Honest origin story, acknowledges the irony |
 | `your-brain-on-boredom` | DMN neuroscience, real citations, accessible tone |
 
 ## Environment Variables
