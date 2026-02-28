@@ -1,0 +1,21 @@
+{
+  "name": "Terminally Offline",
+  "short_name": "T.O.",
+  "description": "The ultimate luxury in 2026 is being unreachable. Join the 30-Day Offline Challenge.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0EDE8",
+  "theme_color": "#1B998B",
+  "icons": [
+    {
+      "src": "/icon",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
